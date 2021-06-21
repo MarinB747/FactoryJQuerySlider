@@ -1,0 +1,140 @@
+body {
+  overflow: hidden;
+}
+
+.header__big {
+  position: absolute;
+  width: 65%;
+  height: 100px;
+  right: 0;
+  top: 0px;
+  background: #dddddd;
+}
+.header__small {
+  position: absolute;
+  width: 34%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: #dddddd;
+}
+.footer {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  right: 0;
+  bottom: 0px;
+  background: #dddddd;
+}
+.top__row {
+  position: absolute;
+  height: 27%;
+  right: 30.8%;
+  top: 25%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.bottom__row {
+  position: absolute;
+  height: 27%;
+  bottom: 20%;
+  right: 37%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.arrow__container {
+  position: absolute;
+  right: 28%;
+  bottom: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  background: white;
+  z-index: 2;
+  width: 9.2%;
+}
+.btn__wrapper {
+  background: transparent;
+  border-style: none;
+}
+.slider__img {
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+.arrow__btn--left--inactive {
+  width: 35%;
+  height: 21%;
+  border: 1px solid #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-image: url("../assets/arrow-gray-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrow__btn--left--active {
+  width: 35%;
+  height: 21%;
+  border: 1px solid #134880;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-image: url("../assets/arrow-blue-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrow__btn--right--inactive {
+  width: 35%;
+  height: 21%;
+  border: 1px solid #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-image: url("../assets/arrow-gray-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrow__btn--right--active {
+  width: 35%;
+  height: 21%;
+  border: 1px solid #134880;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-image: url("../assets/arrow-blue-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text__container {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  right: 0;
+  top: 21%;
+  background: white;
+  z-index: 2;
+}
+.text__container > h1 {
+  color: #134880;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+}
+.text__container > p {
+  color: #484a4c;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+.transition {
+  transition: 0.7s;
+}
