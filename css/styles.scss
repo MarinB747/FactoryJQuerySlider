@@ -16,10 +16,10 @@ body {
 .content__container {
   width: 940px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-direction: row;
   align-items: flex-start;
-  overflow: hidden;
+  overflow: visible;
   padding: 50px 0;
   height: auto;
 }
@@ -46,19 +46,16 @@ body {
 }
 .top__row {
   overflow: visible;
-  height: auto;
   display: flex;
   justify-content: flex-end;
   position: relative;
   margin-right: 10px;
 }
 .bottom__row {
-  overflow: hidden;
-  height: auto;
+  overflow: visible;
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  left: -10%;
+  margin-right: 100px;
 }
 .bottom__row--wrapper {
   display: flex;
@@ -75,12 +72,11 @@ body {
   z-index: 2;
 }
 .slider {
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
-  justify-self: flex-end;
-  position: relative;
+  justify-self: flex-start;
 }
 .btn__wrapper {
   background: transparent;
@@ -91,6 +87,7 @@ body {
   border-radius: 5px;
   height: 200px;
   width: auto;
+  position: relative;
 }
 .arrow__btn--left--inactive {
   width: 60px;
