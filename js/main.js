@@ -1,16 +1,16 @@
 jQuery(function (t) {
   t("#prev").on("click", function () {
     t("#prev").attr({ disabled: !0, class: "arrow__btn--left--inactive" }),
-      t(".slider__img:first-child").hide("normal", function () {
+      t(".slider__img:first-child").hide("fast", function () {
         t(this)
           .appendTo(t(this).parent())
-          .show("normal")
+          .show("fast")
           .css({ marginRight: "10px" });
       });
 
     setTimeout(() => {
       t("#prev").attr({ disabled: !1, class: "arrow__btn--left--active" });
-    }, 800);
+    }, 400);
   }),
     t("#next").on("click", function () {
       t("#next").attr({ disabled: !0, class: "arrow__btn--right--inactive" }),
