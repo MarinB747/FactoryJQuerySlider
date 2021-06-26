@@ -1,24 +1,27 @@
-jQuery(function ($) {
-  $("#prev").on("click", function () {
-    $(".slider__img:first-child")
-      .animate({ marginRight: +this.width }, function () {
-        $(this).hide().appendTo($(this).parent()).css({ marginRight: 5 });
-      })
-      .show("normal");
-  });
-  $("#prev").on("click", function () {
-    $(this).attr("class", "arrow__btn--left--active");
-    $("#next").attr("class", "arrow__btn--right--inactive");
-  });
-  $("#next").on("click", function () {
-    $(".slider__img:last-child")
-      .hide("normal")
-      .animate({ marginLeft: +this.width }, function () {
-        $(this).prependTo($(this).parent()).show("fast").css({ marginLeft: 5 });
+jQuery(function (t) {
+  t("#prev").on("click", function () {
+    t("#prev").attr({ disabled: !0, class: "arrow__btn--left--inactive" }),
+      t(".slider__img:first-child").hide("fast", function () {
+        t(this)
+          .appendTo(t(this).parent())
+          .show("fast")
+          .css({ marginRight: "10px" });
       });
-  });
-  $("#next").on("click", function () {
-    $(this).attr("class", "arrow__btn--right--active");
-    $("#prev").attr("class", "arrow__btn--left--inactive");
-  });
+
+    setTimeout(() => {
+      t("#prev").attr({ disabled: !1, class: "arrow__btn--left--active" });
+    }, 800);
+  }),
+    t("#next").on("click", function () {
+      t("#next").attr({ disabled: !0, class: "arrow__btn--right--inactive" }),
+        t(".slider__img:last-child").hide("fast", function () {
+          t(this)
+            .prependTo(t(this).parent())
+            .show("fast")
+            .css({ marginLeft: "10px" });
+        });
+      setTimeout(() => {
+        t("#next").attr({ disabled: !1, class: "arrow__btn--right--active" });
+      }, 400);
+    });
 });
